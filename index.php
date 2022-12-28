@@ -19,6 +19,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="/path/to/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
     <style>
         .card {
             margin: 0.9rem;
@@ -107,6 +111,21 @@
             mysqli_close($conn);
             ?>
         </div>
+        <button id="pritisni">Pritisni</button>
+        <input type="text" id="text2">
+
+
+        <script>
+
+            $("#pritisni").click(function () {
+                $("body").css(
+                    "background-color",
+                    document.getElementById("text2").value
+                );
+            });
+
+        </script>
+
     </div>
     <footer class="bg-light text-center text-lg-start fixed-bottom">
         <!-- Copyright -->

@@ -64,7 +64,8 @@
                                     <div class="form-outline">
                                         <label class="form-label" for="form3Example4cg"><b>Geslo</b></label>
                                         <input type="password" id="form3Example4cg" class="form-control form-control-lg"
-                                            name="geslo" />
+                                            name="geslo" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
+                                    <p>Geslo naj vsebuje vsaj eno malo črko, eno veliko črko, eno število in pa dolžina mora biti vsaj 8 znakov!</p>
 
                                     </div>
 
